@@ -95,8 +95,6 @@ To set up CloudWatch:
 - Optionally, create an alarm to stop EC2 after the Airflow DAG completes, optimizing costs.
 
 ### 5. Airflow DAG Setup
-![Airflow DAG Image](./diagrams/Airflow 2.png)
-
 To set up the Airflow DAG:
 - Install Airflow via Docker on the EC2 instance.
 - Place the provided Python code in the `dags` folder.
