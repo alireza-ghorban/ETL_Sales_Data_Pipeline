@@ -12,6 +12,7 @@
 ## Overview
 
 This project emulates a typical ETL process found in many companies where data files are sent daily to a data lake, then scanned and processed for further analysis. In this guide, you'll create an ETL (Extract/Transform/Load) data pipeline from data ingestion to a BI dashboard output using Apache Airflow for orchestration. The pipeline processes daily sales and inventory transactional tables sourced from a relational database. The transformed data is then stored in an S3 data warehouse and finally read into a BI dashboard. This entire pipeline is set to run daily at 2am UTC.
+To understand the data transformations and the metrics derived from the processed data, refer to the [SalesDataMetrics Document](./SalesDataMetrics/metrics_document.md) housed in the `metrics` folder.
 
 ## Architecture
 
