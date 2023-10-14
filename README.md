@@ -37,7 +37,9 @@ The architecture leverages primarily AWS services, with a focus on a cost-effect
    - Validate the input files in S3.
    - Start the Airflow DAG if validation passes.
 4. The Airflow DAG processes the data through several stages, from extraction to loading. 
-![DAG Overview](./diagrams/Airflow 2.png)
+
+![DAG Overview](./diagrams/Airflow.png)
+
 5. After the DAG execution, CloudWatch triggers the Lambda function to stop the EC2 instance to save costs.
   
 ## Installation and Setup
@@ -76,7 +78,7 @@ To set up the EC2 instance:
 - Set up the Airflow web server and scheduler.
 
 ### 3. Lambda Function
-![Lambda Function Image](.diagrams/Lambda_functions Medium.png)
+![Lambda Function Image](./diagrams/Lambda_functions.png)
 
 For the Lambda function:
 - Navigate to the Lambda service in AWS Console.
